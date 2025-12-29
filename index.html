@@ -1,0 +1,487 @@
+ <!doctype html>
+<html lang="ko" class="scroll-smooth">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>황정성 | Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-zinc-700 selection:text-white">
+
+	<header class="sticky top-0 z-50 bg-zinc-950/95 border-b border-zinc-800/50">
+		<div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+			<a class="text-lg font-bold tracking-tight hover:text-zinc-300 transition-colors" href="#top" aria-label="홈으로">
+				황정성의 Portfolio
+			</a>
+			<nav class="hidden md:flex gap-8 items-center text-sm font-medium text-zinc-400">
+				<a href="#about" class="hover:text-white transition-colors">소개</a>
+				<a href="#skills" class="hover:text-white transition-colors">스킬</a>
+				<a href="#certi" class="hover:text-white transition-colors">자격증</a>
+				<a href="#projects" class="hover:text-white transition-colors">프로젝트</a>
+				<a href="#contact" class="hover:text-white transition-colors">연락</a>
+			</nav>
+			<button id="navBtn" class="md:hidden p-2 text-zinc-400 hover:text-white border border-zinc-800 rounded-lg">
+				<span class="sr-only">메뉴 열기</span>
+				☰
+			</button>
+		</div>
+	</header>
+	<div id="mobileMenu" class="hidden md:hidden fixed inset-0 z-40 bg-zinc-950 pt-20 px-6">
+		<nav class="flex flex-col gap-6 text-xl font-bold text-zinc-300">
+			<a href="#about" class="hover:text-white">소개</a>
+			<a href="#skills" class="hover:text-white">스킬</a>
+			<a href="#certi" class="hover:text-white">자격증</a>
+			<a href="#projects" class="hover:text-white">프로젝트</a>
+			<a href="#contact" class="hover:text-white">연락</a>
+		</nav>
+		<button id="closeMenuBtn" class="absolute top-4 right-6 p-2 text-zinc-400 hover:text-white text-2xl">
+			✕
+		</button>
+	</div>
+	<main id="top">
+		<section class="py-20 lg:py-32 relative">
+			<div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12 lg:gap-20 items-center md:items-start">
+				<div class="order-1 md:order-1 flex flex-col items-center md:items-start gap-6 w-full md:w-auto shrink-0">
+					<div class="relative group w-full max-w-[212px] md:max-w-[237px]">
+						<div class="absolute -inset-1 bg-gradient-to-tr from-zinc-700 to-zinc-800 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500">
+						</div>
+						<img class="relative w-full aspect-[4/5] object-cover rounded-xl border border-zinc-800 bg-zinc-900 shadow-2xl" src="https://github.com/user-attachments/assets/83c2a379-5c7e-4bf5-9d8c-ac5c9d5a9e3e" alt="프로필 사진" />
+					</div>
+					<div class="flex gap-5 items-center justify-center w-full text-zinc-500">
+						<a href="https://github.com/HwangJeongSeong" class="hover:text-white transition-colors flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-zinc-800/50">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+								<path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+							</svg>
+							<span class="font-medium text-sm">GitHub</span>
+						</a>
+						<span class="w-0.5 h-4 bg-zinc-800"></span>
+						<a href="https://velog.io/@hjs5433629/posts" class="hover:text-white transition-colors flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-zinc-800/50">
+							<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+							</svg>
+							<span class="font-medium text-sm">Blog</span>
+						</a>
+					</div>
+				</div>
+				<div class="flex flex-col items-center md:items-start order-2 md:order-2 text-center md:text-left h-full justify-center w-full flex-1">
+					<span class="inline-block px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-sm font-medium mb-6">
+						Backend & Fullstack Developer
+					</span>
+					<h1 class="text-[25px] md:text-[31px] lg:text-[49px] font-bold tracking-tight mb-6 leading-tight">
+						집요하게 고민하고 최적의 답을 찾는, <br /><span class="text-zinc-100">황정성</span>입니다.
+					</h1>
+					<p class="text-lg text-zinc-400 leading-relaxed mb-10 max-w-lg">
+						요구사항을 빠르게 구조화하고, 도메인/DB 설계부터 배포·운영까지 고려해
+						<span class="text-zinc-200 font-semibold">“끝까지 책임지는 개발”</span>을 지향합니다.
+					</p>
+					<div class="flex flex-wrap justify-center md:justify-start gap-4">
+						<a class="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold bg-zinc-100 text-zinc-900 hover:bg-zinc-200 transition-all text-base" href="#projects">
+							프로젝트 보기
+						</a>
+						<a class="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold bg-zinc-900 text-zinc-300 border border-zinc-800 hover:bg-zinc-800 hover:text-white transition-all text-base" href="#contact">
+							연락하기
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="border-y border-zinc-800 bg-zinc-900/30">
+			<div class="max-w-6xl mx-auto px-6 py-8">
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-zinc-800 text-center">
+					<div>
+						<div class="text-3xl font-bold text-white mb-1">3+</div>
+						<div class="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Projects</div>
+					</div>
+					<div>
+						<div class="text-3xl font-bold text-white mb-1">1+</div>
+						<div class="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Deployed</div>
+					</div>
+					<div>
+						<div class="text-3xl font-bold text-white mb-1">2+</div>
+						<div class="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Collaboration</div>
+					</div>
+					<div>
+						<div class="text-3xl font-bold text-white mb-1">Full</div>
+						<div class="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Stack</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="py-24">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold">소개</h2>
+					<span class="text-zinc-500 font-semibold tracking-wide uppercase text-sm mt-2 block">Introduction</span>
+				</div>
+				<div class="grid md:grid-cols-2 gap-12 lg:gap-20 text-left">
+					<div class="space-y-6">
+						<h3 class="text-xl font-bold text-zinc-100 flex items-center gap-2">
+							<span class="w-2 h-8 bg-zinc-700 rounded-full"></span>
+							어떤 개발자인가요?
+						</h3>
+						<p class="text-zinc-400 leading-relaxed text-lg">
+							복잡한 요구사항을 구조화해
+							<strong class="text-zinc-200">유지보수와 확장</strong>을 고려한 코드를 설계 하는 개발자 입니다.
+						</p>
+						<p class="text-zinc-400 leading-relaxed text-lg">
+							단순히 기능을 만드는 것을 넘어, 협업에서는
+							<strong class="text-zinc-200">문서화, 규칙</strong>을 정리하여
+							팀 전체의 속도를 높이는 역할을 선호합니다.
+						</p>
+					</div>
+					<div class="space-y-8">
+						<div>
+							<h3 class="text-xl font-bold text-zinc-100 mb-6 flex items-center gap-2">
+								<span class="w-2 h-8 bg-zinc-700 rounded-full"></span>
+								Experience
+							</h3>
+							<ul class="space-y-6 border-l-2 border-zinc-800 ml-3 pl-8 relative">
+								<li class="relative">
+									<span class="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-zinc-900 border-2 border-zinc-700"></span>
+									<div class="text-zinc-200 font-semibold">국립공주대학교 데이터정보물리학과</div>
+									<div class="text-zinc-500 text-sm mt-1">전공</div>
+								</li>
+								<li class="relative">
+									<span class="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-zinc-900 border-2 border-zinc-700"></span>
+									<div class="text-zinc-200 font-semibold">SBS아카데미 컴퓨터아트학원 대전점</div>
+									<div class="text-zinc-500 text-sm mt-1">풀스택 과정 수료</div>
+								</li>
+								<li class="relative">
+									<span class="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-zinc-900 border-2 border-zinc-700"></span>
+									<div class="text-zinc-200 font-semibold">수도권 ICT 이노베이션 스퀘어</div>
+									<div class="text-zinc-500 text-sm mt-1">AI 네트워크 과정 수료</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mt-12 p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800">
+					<div class="flex flex-col md:flex-row gap-6 md:items-center justify-between">
+						<div>
+							<h3 class="text-lg font-bold text-white mb-2">💡 Core Strength</h3>
+							<p class="text-zinc-400">
+								지치지 않는 정신으로
+								<span class="text-zinc-200 font-medium">포기 하지 않는</span> 개발자 입니다.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="skills" class="py-20 border-t border-zinc-800">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold mb-3">스킬</h2>
+					<p class="text-zinc-500 text-lg">기술 스택</p>
+				</div>
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">Java</div>
+							<div class="text-zinc-500 text-sm">Backend</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">Spring Boot</div>
+							<div class="text-zinc-500 text-sm">Backend</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.simpleicons.org/springsecurity/6DB33F" alt="Spring Security icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">Spring Security</div>
+							<div class="text-zinc-500 text-sm">Auth</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">JPA (Hibernate)</div>
+							<div class="text-zinc-500 text-sm">ORM</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" alt="MariaDB icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">MariaDB</div>
+							<div class="text-zinc-500 text-sm">Database</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">Next.js 14</div>
+							<div class="text-zinc-500 text-sm">Frontend</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">React</div>
+							<div class="text-zinc-500 text-sm">Frontend</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">TypeScript</div>
+							<div class="text-zinc-500 text-sm">Frontend</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png" alt="AWS icon" class="w-10 h-10 object-contain" />
+						<div>
+							<div class="text-zinc-100 font-semibold">AWS EC2</div>
+							<div class="text-zinc-500 text-sm">Infra</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">Nginx</div>
+							<div class="text-zinc-500 text-sm">Gateway</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">GitHub Actions</div>
+							<div class="text-zinc-500 text-sm">CI/CD</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.simpleicons.org/thymeleaf/005F0F" alt="Thymeleaf icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">Thymeleaf</div>
+							<div class="text-zinc-500 text-sm">View</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">Spring WebFlux</div>
+							<div class="text-zinc-500 text-sm">Async</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.simpleicons.org/webrtc/00A0C6" alt="WebRTC icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">WebRTC</div>
+							<div class="text-zinc-500 text-sm">Realtime</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.simpleicons.org/pwa/5A0FC8" alt="PWA icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">PWA (Web Push)</div>
+							<div class="text-zinc-500 text-sm">Notification</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<svg class="w-10 h-10 text-zinc-100 bg-zinc-800/60 rounded-lg p-2 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path d="M12 4c-4.4 0-8 1.8-8 4s3.6 4 8 4 8-1.8 8-4-3.6-4-8-4z" />
+							<path d="M4 10v4c0 2.2 3.6 4 8 4s8-1.8 8-4v-4c-1.6 1.5-4.6 2.5-8 2.5S5.6 11.5 4 10z" />
+						</svg>
+						<div>
+							<div class="text-zinc-100 font-semibold">H2 Database</div>
+							<div class="text-zinc-500 text-sm">Test</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">Python</div>
+							<div class="text-zinc-500 text-sm">Language</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C icon" class="w-10 h-10" />
+						<div>
+							<div class="text-zinc-100 font-semibold">C</div>
+							<div class="text-zinc-500 text-sm">Language</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="certi" class="py-20 border-t border-zinc-800 bg-zinc-900/30">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold mb-3">자격증</h2>
+					<p class="text-zinc-500 text-lg">Certification</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<svg class="w-10 h-10 text-zinc-200 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+							<rect x="4" y="3" width="14" height="18" rx="2" />
+							<path d="M8 8h6M8 12h6" />
+							<path d="M16 14l3 1.5V20l-3-1.5L13 20v-4.5L16 14z" />
+						</svg>
+						<div>
+							<div class="text-zinc-100 font-semibold">데이터분석준전문가</div>
+							<div class="text-zinc-500 text-sm">ADsP</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<svg class="w-10 h-10 text-zinc-200 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+							<rect x="4" y="5" width="16" height="14" rx="2" />
+							<path d="M7 9h10M7 13h6" />
+						</svg>
+						<div>
+							<div class="text-zinc-100 font-semibold">SQLD</div>
+							<div class="text-zinc-500 text-sm">SQL 개발자</div>
+						</div>
+					</div>
+					<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4">
+						<svg class="w-10 h-10 text-zinc-200 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+							<rect x="6" y="3" width="12" height="18" rx="2" />
+							<path d="M9 8h6M9 12h6M9 16h4" />
+						</svg>
+						<div>
+							<div class="text-zinc-100 font-semibold">정보처리산업기사 필기 합격</div>
+							<div class="text-zinc-500 text-sm">Written Pass</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="py-20 border-t border-zinc-800 bg-zinc-900/30">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold mb-3">프로젝트</h2>
+					<p class="text-zinc-500 text-lg">협업, 개인 프로젝트</p>
+				</div>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<article data-project="guardian" class="group cursor-pointer bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex flex-col gap-4 hover:border-zinc-700 transition-colors h-full">
+						<div class="flex items-center gap-2 mb-2">
+							<span class="px-2.5 py-0.5 rounded bg-zinc-800 text-zinc-400 text-xs font-semibold uppercase tracking-wide">Team</span>
+							<span class="px-2.5 py-0.5 rounded bg-zinc-800/50 text-zinc-500 text-xs font-semibold uppercase tracking-wide">Fullstack</span>
+						</div>
+						<h3 class="text-xl font-bold text-zinc-100">Guardian</h3>
+						<p class="text-zinc-400 text-sm leading-relaxed mb-2">
+							복약 플랜과 웹푸시 알림을 제공하는 헬스케어 플랫폼.
+						</p>
+						<div class="flex flex-wrap gap-2 mt-auto">
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">Spring Boot 3</span>
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">Next.js 14</span>
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">MariaDB</span>
+						</div>
+					</article>
+					<article data-project="cafe-persona" class="group cursor-pointer bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex flex-col gap-4 hover:border-zinc-700 transition-colors h-full">
+						<div class="flex items-center gap-2 mb-2">
+							<span class="px-2.5 py-0.5 rounded bg-zinc-800 text-zinc-400 text-xs font-semibold uppercase tracking-wide">Team</span>
+							<span class="px-2.5 py-0.5 rounded bg-zinc-800/50 text-zinc-500 text-xs font-semibold uppercase tracking-wide">Fullstack</span>
+						</div>
+						<h3 class="text-xl font-bold text-zinc-100">Cafe-Persona</h3>
+						<p class="text-zinc-400 text-sm leading-relaxed mb-2">
+							리뷰·평점·이미지 중심의 카페 커뮤니티 서비스.
+						</p>
+						<div class="flex flex-wrap gap-2 mt-auto">
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">Spring Boot 3.3</span>
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">Thymeleaf</span>
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">MariaDB</span>
+						</div>
+					</article>
+					<article data-project="quiz-builder" class="group cursor-pointer bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex flex-col gap-4 hover:border-zinc-700 transition-colors h-full">
+						<div class="flex items-center gap-2 mb-2">
+							<span class="px-2.5 py-0.5 rounded bg-zinc-800 text-zinc-400 text-xs font-semibold uppercase tracking-wide">Mini</span>
+							<span class="px-2.5 py-0.5 rounded bg-zinc-800/50 text-zinc-500 text-xs font-semibold uppercase tracking-wide">Tooling</span>
+						</div>
+						<h3 class="text-xl font-bold text-zinc-100">CLI Quiz Builder</h3>
+						<p class="text-zinc-400 text-sm leading-relaxed mb-2">
+							출제·채점·진도 저장이 가능한 CLI 문제은행.
+						</p>
+						<div class="flex flex-wrap gap-2 mt-auto">
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">Python</span>
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">CLI</span>
+							<span class="px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">OOP</span>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="py-20 border-t border-zinc-800">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold mb-3">연락처</h2>
+					<p class="text-zinc-500 text-lg">Contact</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<a href="mailto:hjs54336297@gmail.com" class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4 hover:border-zinc-700 transition-colors">
+						<svg class="w-10 h-10 text-zinc-200 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+							<rect x="3" y="6" width="18" height="12" rx="2" />
+							<path d="M3 7l9 6 9-6" />
+						</svg>
+						<div>
+							<div class="text-zinc-100 font-semibold">Email</div>
+							<div class="text-zinc-500 text-sm">hjs54336297@gmail.com</div>
+						</div>
+					</a>
+					<a href="tel:+82102497611" class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex items-center gap-4 hover:border-zinc-700 transition-colors">
+						<svg class="w-10 h-10 text-zinc-200 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+							<path d="M4 4h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a2 2 0 01-2 2C9.82 22 2 14.18 2 4a2 2 0 012-2z" />
+						</svg>
+						<div>
+							<div class="text-zinc-100 font-semibold">Phone</div>
+							<div class="text-zinc-500 text-sm">+82 10-2497-6111</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer class="py-12 border-t border-zinc-800 text-center text-sm text-zinc-500">
+			<div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+				<div>© 2025 Hwang Jeongseong</div>
+				<a class="hover:text-zinc-300 transition-colors" href="#top">맨 위로 Go</a>
+			</div>
+		</footer>
+		<div id="projectModal" class="hidden fixed inset-0 z-50 flex items-center justify-center px-4">
+			<div id="modalBackdrop" class="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity opacity-0"></div>
+			<div id="modalContent" class="relative bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 opacity-0 transition-all duration-300">
+				<div id="modalImageWrap" class="h-40 bg-gradient-to-r from-zinc-800 to-zinc-900 overflow-hidden">
+					<img id="modalImage" src="" alt="" class="w-full h-full object-cover hidden" />
+				</div>
+				<button id="closeModalBtn" class="absolute top-4 right-4 p-2 bg-zinc-950/50 rounded-full text-zinc-400 hover:text-white transition-colors">
+					<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</button>
+				<div class="p-8">
+					<div class="flex items-center gap-2 mb-4">
+						<span id="modalTags" class="flex gap-2"></span>
+					</div>
+					<h3 id="modalTitle" class="text-3xl font-bold text-white mb-4">Project Title</h3>
+					<div id="modalDescription" class="prose prose-invert prose-zinc max-w-none text-zinc-400 space-y-4">
+						<p>Project description goes here...</p>
+					</div>
+					<div class="mt-8 pt-6 border-t border-zinc-800 flex gap-4">
+						<a id="modalGithub" href="#" target="_blank" class="hidden flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-800 text-zinc-200 hover:bg-zinc-700 transition-colors font-medium">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+							</svg>
+							GitHub
+						</a>
+						<a id="modalDocs" href="#" target="_blank" class="hidden flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-800 text-zinc-200 hover:bg-zinc-700 transition-colors font-medium">
+							<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+							</svg>
+							Docs
+						</a>
+						<a id="modalDemo" href="#" target="_blank" class="hidden flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-100 text-zinc-900 hover:bg-zinc-200 transition-colors font-medium">
+							Demo
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
