@@ -1,20 +1,3 @@
-tailwind.config = {
-    theme: {
-        extend: {
-            colors: {
-                bg: '#18181b', // Zinc-900
-                card: '#27272a', // Zinc-800
-                accent: '#e4e4e7', // Zinc-200 (Soft White)
-                muted: '#a1a1aa', // Zinc-400
-            },
-            fontFamily: {
-                sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            },
-        },
-    },
-}
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const projectData = {
         "guardian": {
