@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
             `,
             github: "https://github.com/kaeng2258/Teamprj-Guardian-",
-            docs: "https://drive.google.com/file/d/1QBZsVaw14uEVFgWorOhIWGG_fsbqAnys/view?usp=sharing",
+            docs: "https://drive.google.com/file/d/1GFZHnqmBNEjGRs5HDwrmrF8NbbhrI_4C/view?usp=sharing",
             demo: null
         },
         "cafe-persona": {
