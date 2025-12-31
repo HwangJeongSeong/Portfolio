@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.removeAttribute('target');
+        link.removeAttribute('rel');
+    });
     const projectData = {
         "guardian": {
             title: "Guardian",
