@@ -30,32 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             docs: null,
             demo: null
         },
-        "trip-in-jeju": {
-            title: "Trip In Jeju",
-            tags: ["Team", "Fullstack"],
-            image: "https://github.com/user-attachments/assets/1c871a74-31f9-498a-9bdf-0fda3adf97d4",
-            imageWrapClass: "h-48",
-            imageClass: "object-cover",
-            description: `
-                <p><strong>제주 여행 추천 및 일정 관리 플랫폼</strong></p>
-                <p>추천 장소, 사용자 리뷰, 일정 기록, 캘린더 확인 흐름을 한곳에 모은 여행 서비스입니다.</p>
-                <p><strong>기술 스택:</strong></p>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>Backend:</strong> Java 17, Spring Boot, Spring Security, JPA</li>
-                    <li><strong>Frontend:</strong> Thymeleaf, JavaScript, Tailwind CSS</li>
-                    <li><strong>Infra:</strong> MariaDB, Jenkins, Ncloud</li>
-                </ul>
-                <p><strong>주요 기능:</strong></p>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li>여행 장소 탐색, 리뷰, 지도 기반 확인</li>
-                    <li>캘린더 일정 및 축제 정보 확인</li>
-                    <li>GPS 기반 방문 인증과 리뷰 작성 흐름</li>
-                </ul>
-            `,
-            github: "https://github.com/HwangJeongSeong/Trip_in_JEJU",
-            docs: "https://youtu.be/1DJNi3fg2WE",
-            demo: "https://kkyul.site"
-        },
         "beanspot": {
             title: "BeanSpot",
             tags: ["Team", "Review Platform"],
@@ -82,31 +56,58 @@ document.addEventListener('DOMContentLoaded', () => {
             docs: null,
             demo: "https://www.youtube.com/watch?v=nvzq5ZW2wJI"
         },
-        "fictionplace": {
-            title: "FictionPlace",
-            tags: ["Team", "Platform"],
-            image: "https://github.com/user-attachments/assets/e580e5db-a87a-4fc3-8eaa-1afa41aef838",
-            imageWrapClass: "h-48",
+        "brin-mall": {
+            title: "Brin Mall",
+            tags: ["Solo", "E-commerce"],
+            image: null,
+            imageWrapClass: "h-40",
             imageClass: "object-cover",
             description: `
-                <p><strong>웹툰 작가와 기업을 연결하는 매칭 플랫폼</strong></p>
-                <p>작품 등록, 회차 관리, 커뮤니티, 메시지, 채용 공고 흐름을 묶은 웹툰 중심 플랫폼입니다.</p>
+                <p><strong>레거시 PHP 스타일로 구현한 쇼핑몰 데모</strong></p>
+                <p>PHP 5.6 문법과 MVC 구조를 유지하면서도, 상품 목록부터 장바구니·주문·관리자 기능까지 실행 가능한 형태로 구성한 프로젝트입니다.</p>
                 <p><strong>기술 스택:</strong></p>
                 <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>Backend:</strong> Java 23, Spring Boot 3.3.5, JPA, Spring Security</li>
-                    <li><strong>Frontend:</strong> Thymeleaf, jQuery, JavaScript</li>
-                    <li><strong>DB:</strong> MariaDB</li>
+                    <li><strong>Backend:</strong> PHP 5.6, mysqli, MVC</li>
+                    <li><strong>Frontend:</strong> HTML, CSS, jQuery</li>
+                    <li><strong>Infra:</strong> Apache, MySQL 8.0, Docker Compose</li>
                 </ul>
                 <p><strong>주요 기능:</strong></p>
                 <ul class="list-disc pl-5 space-y-1">
-                    <li>웹툰 작품 및 회차 등록/관리</li>
-                    <li>게시판, 댓글, 관심 작품, 추천 기능</li>
-                    <li>기업 채용 공고와 사용자 메시지 기능</li>
+                    <li>상품 목록, 검색, 상세 페이지</li>
+                    <li>세션 기반 장바구니와 주문 내역 조회</li>
+                    <li>관리자 상품 등록, 수정, 삭제</li>
+                    <li>CSRF 방어, 로그인 시도 제한, 세션 강화</li>
                 </ul>
             `,
-            github: "https://github.com/HwangJeongSeong/FictionPlace",
+            github: "https://github.com/HwangJeongSeong/PHP_Brin_mall",
             docs: null,
-            demo: "https://www.youtube.com/watch?v=P1Mu25DWq70&t=3s"
+            demo: null
+        },
+        "shiftjb": {
+            title: "shiftJB",
+            tags: ["Fullstack", "Monorepo"],
+            image: null,
+            imageWrapClass: "h-40",
+            imageClass: "object-cover",
+            description: `
+                <p><strong>근무 기록과 승인 프로세스를 담은 모노레포 프로젝트</strong></p>
+                <p>백엔드 API, 관리자 웹, 모바일 앱을 한 저장소에서 관리하며 출퇴근 기록과 관리자 승인 흐름을 다루는 서비스입니다.</p>
+                <p><strong>구성:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>backend/</strong> Spring Boot, Gradle, Java 21</li>
+                    <li><strong>admin-web/</strong> Next.js App Router, TypeScript</li>
+                    <li><strong>mobile-app/</strong> Expo, TypeScript</li>
+                </ul>
+                <p><strong>주요 기능:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>회원가입 후 관리자 승인 기반 로그인 흐름</li>
+                    <li>출근, 퇴근, 진행 중 근무 조회 API</li>
+                    <li>관리자 근무 기록 수정과 승인 관리 화면</li>
+                </ul>
+            `,
+            github: "https://github.com/HwangJeongSeong/shiftJB",
+            docs: null,
+            demo: null
         }
     };
     const modal = document.getElementById('projectModal');
