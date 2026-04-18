@@ -4,93 +4,109 @@ document.addEventListener('DOMContentLoaded', () => {
         link.removeAttribute('rel');
     });
     const projectData = {
-        "guardian": {
-            title: "Guardian",
-            tags: ["Team", "Fullstack"],
-            image: "https://github.com/user-attachments/assets/830183fd-94ee-4940-86ea-49e45cfbe260",
-            imageWrapClass: "h-56",
-            imageClass: "object-contain p-4",
-            description: `
-                <p><strong>복약/알림 중심 건강 케어 플랫폼</strong></p>
-                <p>환자·보호자가 복약 플랜과 복용 로그를 공유하고, 채팅/웹푸시로 긴급 알림을 전달하는 통합 케어 서비스입니다.</p>
-                <p><strong>기술 스택:</strong></p>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>Frontend:</strong> Next.js, React, TypeScript, PWA(Web Push)</li>
-                    <li><strong>Backend:</strong> Java 17, Spring Boot 3, Spring Security, JPA(Hibernate)</li>
-                    <li><strong>DB:</strong> MariaDB</li>
-                    <li><strong>Infra:</strong> AWS EC2, Nginx</li>
-                    <li><strong>Auth/CI:</strong> JWT, GitHub Actions</li>
-                </ul>
-                <p><strong>주요 기능:</strong></p>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li>복약 플랜/복용 로그 관리</li>
-                    <li>역할 기반 대시보드 및 매칭</li>
-                    <li>실시간 채팅/웹푸시 알림</li>
-                </ul>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>역할:</strong> 풀스택 개발, API/인프라 설계</li>
-                    <li><strong>핵심:</strong> 웹푸시 알림, 역할 기반 접근 제어, 자동 배포</li>
-                </ul>
-            `,
-            github: "https://github.com/kaeng2258/Teamprj-Guardian-",
-            docs: "https://drive.google.com/file/d/1GFZHnqmBNEjGRs5HDwrmrF8NbbhrI_4C/view?usp=sharing",
-            demo: null
-        },
-        "cafe-persona": {
-            title: "Cafe-Persona",
-            tags: ["Team", "Fullstack"],
-            image: "https://github.com/user-attachments/assets/d6d52441-a29b-4aaa-9c51-f68c3b26e7d5",
-            imageWrapClass: "h-40",
-            imageClass: "object-cover",
-            description: `
-                <p><strong>카페 리뷰/커뮤니티 플랫폼</strong></p>
-                <p>리뷰·평점·이미지 공유를 중심으로 카페 정보를 축적하고, 좋아요/북마크로 취향 기반 탐색을 돕는 서비스입니다.</p>
-                <p><strong>기술 스택:</strong></p>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>Frontend:</strong> Thymeleaf(SSR), HTML/CSS</li>
-                    <li><strong>Backend:</strong> Spring Boot 3.3, Spring Security, Spring WebFlux, JPA</li>
-                    <li><strong>DB:</strong> MariaDB (Test: H2)</li>
-                    <li><strong>Etc:</strong> Thumbnailator, JavaMailSender</li>
-                </ul>
-                <p><strong>주요 기능:</strong></p>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li>카페 리뷰/평점/이미지 업로드</li>
-                    <li>좋아요/북마크/조회수</li>
-                    <li>검색 및 상세 페이지</li>
-                </ul>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>역할:</strong> 풀스택 (리뷰/평점, 이미지 업로드)</li>
-                    <li><strong>핵심:</strong> SSR, 다중 이미지 업로드/최적화, 좋아요/북마크, 조회수 카운팅</li>
-                </ul>
-            `,
-            github: "https://github.com/hyojung-kim/Cafe-Persona-Project",
-            docs: "https://docs.google.com/presentation/d/1sJTV7zFzQGbIv1_CUogj7raVBYOW9fHXaIe2Fq6yK68/edit?slide=id.g3660ee20793_1_7#slide=id.g3660ee20793_1_7",
-            demo: null
-        },
-        "quiz-builder": {
-            title: "CLI Quiz Builder",
-            tags: ["Mini", "Tooling"],
+        "tapeai": {
+            title: "TapeAI",
+            tags: ["Solo", "AI Tooling"],
             image: null,
             imageWrapClass: "h-40",
             imageClass: "object-cover",
             description: `
-                <p><strong>CLI 기반 문제은행 프로그램</strong></p>
-                <p>터미널에서 출제, 풀이, 채점, 진도 관리까지 흐름을 하나로 묶은 로컬 학습 도구입니다.</p>
-                <p><strong>기술 스택:</strong> Python, OOP, CLI</p>
+                <p><strong>로컬 모델 기반 터미널 AI 에이전트</strong></p>
+                <p>코드 유출 없이 로컬 모델을 활용해 작업하고, 세션 학습과 백엔드 failover까지 고려한 CLI 에이전트입니다.</p>
+                <p><strong>기술 스택:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Runtime:</strong> Python 3</li>
+                    <li><strong>Model Backend:</strong> Ollama, OpenAI-compatible local servers</li>
+                    <li><strong>Mode:</strong> REPL, Headless, Coordinator</li>
+                </ul>
                 <p><strong>주요 기능:</strong></p>
                 <ul class="list-disc pl-5 space-y-1">
-                    <li>문제 출제/풀이/채점</li>
-                    <li>진도 저장 및 통계</li>
-                    <li>문제 유형 확장</li>
-                </ul>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>특징:</strong> OOP 구조 설계로 확장성 확보</li>
-                    <li><strong>핵심:</strong> 진도 저장, 문제 유형 다양화, 관리자 CRUD</li>
+                    <li>자동 세션 요약 및 장기 메모리 반영</li>
+                    <li>다중 백엔드 전환 및 자동 failover</li>
+                    <li>권한 모드와 작업 컨텍스트 수집 자동화</li>
                 </ul>
             `,
-            github: "https://github.com/HwangJeongSeong",
+            github: "https://github.com/HwangJeongSeong/TapeAI",
             docs: null,
             demo: null
+        },
+        "trip-in-jeju": {
+            title: "Trip In Jeju",
+            tags: ["Team", "Fullstack"],
+            image: "https://github.com/user-attachments/assets/1c871a74-31f9-498a-9bdf-0fda3adf97d4",
+            imageWrapClass: "h-48",
+            imageClass: "object-cover",
+            description: `
+                <p><strong>제주 여행 추천 및 일정 관리 플랫폼</strong></p>
+                <p>추천 장소, 사용자 리뷰, 일정 기록, 캘린더 확인 흐름을 한곳에 모은 여행 서비스입니다.</p>
+                <p><strong>기술 스택:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Backend:</strong> Java 17, Spring Boot, Spring Security, JPA</li>
+                    <li><strong>Frontend:</strong> Thymeleaf, JavaScript, Tailwind CSS</li>
+                    <li><strong>Infra:</strong> MariaDB, Jenkins, Ncloud</li>
+                </ul>
+                <p><strong>주요 기능:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>여행 장소 탐색, 리뷰, 지도 기반 확인</li>
+                    <li>캘린더 일정 및 축제 정보 확인</li>
+                    <li>GPS 기반 방문 인증과 리뷰 작성 흐름</li>
+                </ul>
+            `,
+            github: "https://github.com/HwangJeongSeong/Trip_in_JEJU",
+            docs: "https://youtu.be/1DJNi3fg2WE",
+            demo: "https://kkyul.site"
+        },
+        "beanspot": {
+            title: "BeanSpot",
+            tags: ["Team", "Review Platform"],
+            image: "https://github.com/user-attachments/assets/d6d52441-a29b-4aaa-9c51-f68c3b26e7d5",
+            imageWrapClass: "h-40",
+            imageClass: "object-cover",
+            description: `
+                <p><strong>상황·취향 맞춤 카페 탐색 및 리뷰 플랫폼</strong></p>
+                <p>카페 검색과 상세 정보, 위치 인증 리뷰, 북마크와 좋아요 흐름을 엮은 SSR 기반 서비스입니다.</p>
+                <p><strong>기술 스택:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Backend:</strong> Spring Boot 3.3, Spring Security, JPA, WebFlux</li>
+                    <li><strong>Frontend:</strong> Thymeleaf, HTML/CSS, JavaScript</li>
+                    <li><strong>DB/API:</strong> MariaDB, Google Place API, Kakao Map API</li>
+                </ul>
+                <p><strong>담당한 영역:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>리뷰 CRUD 및 이미지 업로드</li>
+                    <li>위치 인증 기반 리뷰 작성 흐름</li>
+                    <li>리뷰 좋아요, 정렬, 필터 보정</li>
+                </ul>
+            `,
+            github: "https://github.com/HwangJeongSeong/Cafe-Persona-Project",
+            docs: null,
+            demo: "https://www.youtube.com/watch?v=nvzq5ZW2wJI"
+        },
+        "fictionplace": {
+            title: "FictionPlace",
+            tags: ["Team", "Platform"],
+            image: "https://github.com/user-attachments/assets/e580e5db-a87a-4fc3-8eaa-1afa41aef838",
+            imageWrapClass: "h-48",
+            imageClass: "object-cover",
+            description: `
+                <p><strong>웹툰 작가와 기업을 연결하는 매칭 플랫폼</strong></p>
+                <p>작품 등록, 회차 관리, 커뮤니티, 메시지, 채용 공고 흐름을 묶은 웹툰 중심 플랫폼입니다.</p>
+                <p><strong>기술 스택:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Backend:</strong> Java 23, Spring Boot 3.3.5, JPA, Spring Security</li>
+                    <li><strong>Frontend:</strong> Thymeleaf, jQuery, JavaScript</li>
+                    <li><strong>DB:</strong> MariaDB</li>
+                </ul>
+                <p><strong>주요 기능:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>웹툰 작품 및 회차 등록/관리</li>
+                    <li>게시판, 댓글, 관심 작품, 추천 기능</li>
+                    <li>기업 채용 공고와 사용자 메시지 기능</li>
+                </ul>
+            `,
+            github: "https://github.com/HwangJeongSeong/FictionPlace",
+            docs: null,
+            demo: "https://www.youtube.com/watch?v=P1Mu25DWq70&t=3s"
         }
     };
     const modal = document.getElementById('projectModal');
