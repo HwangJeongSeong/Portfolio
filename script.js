@@ -108,6 +108,34 @@ document.addEventListener('DOMContentLoaded', () => {
             github: "https://github.com/HwangJeongSeong/shiftJB",
             docs: null,
             demo: null
+        },
+        "guardian": {
+            title: "Guardian",
+            tags: ["Team", "Healthcare"],
+            image: "https://github.com/user-attachments/assets/830183fd-94ee-4940-86ea-49e45cfbe260",
+            imageWrapClass: "h-56",
+            imageClass: "object-contain p-4",
+            description: `
+                <p><strong>복약/알림 중심 건강 케어 플랫폼</strong></p>
+                <p>환자와 보호자가 복약 플랜과 복용 로그를 공유하고, 채팅과 웹푸시로 긴급 알림을 전달하는 통합 케어 서비스입니다.</p>
+                <p><strong>기술 스택:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Frontend:</strong> Next.js, React, TypeScript, PWA(Web Push)</li>
+                    <li><strong>Backend:</strong> Java 17, Spring Boot 3, Spring Security, JPA</li>
+                    <li><strong>DB/Infra:</strong> MariaDB, AWS EC2, Nginx</li>
+                    <li><strong>Auth/CI:</strong> JWT, GitHub Actions</li>
+                </ul>
+                <p><strong>주요 기능:</strong></p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>복약 플랜 및 복용 로그 관리</li>
+                    <li>역할 기반 대시보드와 사용자 매칭</li>
+                    <li>실시간 채팅과 웹푸시 알림</li>
+                </ul>
+                <p><strong>역할:</strong> 풀스택 개발, API/인프라 설계</p>
+            `,
+            github: "https://github.com/kaeng2258/Teamprj-Guardian-",
+            docs: "https://drive.google.com/file/d/1GFZHnqmBNEjGRs5HDwrmrF8NbbhrI_4C/view?usp=sharing",
+            demo: null
         }
     };
     const modal = document.getElementById('projectModal');
